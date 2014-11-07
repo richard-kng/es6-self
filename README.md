@@ -7,7 +7,7 @@ Template
 ```javascript
 const self = class Class {
     constructor() {}
-};
+}
 
 export default self;
 ```
@@ -27,7 +27,7 @@ const self = class Color {
            than call Color.fromStringToRGB(string) */
         this._rgb = self.fromStringToRGB(string);
     }
-};
+}
 
 export default self;
 ```
