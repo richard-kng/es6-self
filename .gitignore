@@ -1,0 +1,8 @@
+# WebStorm directory
+.idea
+
+# Project notes
+PROJECT_NOTES
+
+# NPM Debug log
+npm-debug.log
