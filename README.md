@@ -5,31 +5,31 @@ __Using "self" in classes in a consistent way. An important, particularly useful
 Template
 --------
 ```javascript
-    const self = class Class {
-        constructor() {}
-    };
+const self = class Class {
+    constructor() {}
+};
 
-    export default self;
+export default self;
 ```
 Example
 -------
 ```javascript
-    const self = class Color {
-        static fromStringToRGB(string = "0") {
-            return parseInt(string);
-        }
-        constructor() {
-            this._rgb = 0x000000;
-        }
-        parseString(string) {
-            /* Using "self" to invoke a static function
-               (in this case .fromStringToRGB()) rather
-               than call Color.fromStringToRGB(string) */
-            this._rgb = self.fromStringToRGB(string);
-        }
-    };
+const self = class Color {
+    static fromStringToRGB(string = "0") {
+        return parseInt(string);
+    }
+    constructor() {
+        this._rgb = 0x000000;
+    }
+    parseString(string) {
+        /* Using "self" to invoke a static function
+           (in this case .fromStringToRGB()) rather
+           than call Color.fromStringToRGB(string) */
+        this._rgb = self.fromStringToRGB(string);
+    }
+};
 
-    export default self;
+export default self;
 ```
 Suggestions, Ideas & Requests
 -----------------------------
